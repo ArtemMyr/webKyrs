@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.header {
+    background: #222;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 16px;
+    transition: all 0.4s ease-out;
+    padding: 16px 24px;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.navbar .register button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    margin-left: 16px;
+    font-size: 16px;
+
+}
+
+.navbar .register {}
+
+.navbar .register a:hover {
+    color: blueviolet;
+}
+
+.photo>img {
+    width: 150px;
+}
+
+.main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1022px;
+    height: 100vh;
+}
+
+.main .courses {
+    padding-bottom: 20px;
+}
+
+.main h1 {
+    font-size: 32px;
+}
+
+.main .courses .courses_menu {
+    display: flex;
+    padding: 26px 0 13px;
+    margin: 0 0 13px;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 24px;
+    border-bottom: solid rgb(122, 122, 122);
+    border-width: 1px;
+}
+
+.main .courses .courses_menu li {
+    cursor: pointer;
+    transition: all .25s ease-out;
+}
+
+.main .courses .courses_menu li:hover {
+    color: rgb(25, 252, 146);
+    font-weight: bold;
+}
+
+
+a {
+    color: aliceblue;
+    transition: all 0.4s ease-out;
+
+    text-decoration: none;
+}
+
+
+.courses_list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 340px 340px 340px;
+}
+
+.list {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    transition: all .25s ease-out;
+
+}
+
+.list:hover {
+    border-radius: 2%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.courses_list .name {
+    width: 100px;
+}
+
+.courses_list .photo img {
+    width: 150px;
+}
+
+
+.slider {
+    height: 100px;
+    cursor: pointer;
+}
+
+.swiper {
+    text-align: center;
+    height: 100px;
+}
+
+
+.profile button {
+    font-size: 22px;
+    background: none;
+    color: aliceblue;
+    transition: all 0.4s ease-out;
+    border: none;
+    cursor: pointer;
+}
+
+.profile button:hover {
+    color: blueviolet;
+}
+
+.modalWindow {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    top: 69px;
+    background: #222;
+    padding: 20px;
+    color: white;
+}
+
+.ots img {
+    width: 50px;
+    height: 50px;
+}
+
+.ots {
+    padding: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+
+
+
+.footer {
+    background-color: rgb(204, 201, 201);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.data p {
+    transition: all 0.3s ease-in-out;
+}
+
+.data p:hover {
+    color: aqua;
+}
+
+.data1 p {
+    transition: all 0.3s ease-in-out;
+}
+
+.data1 p:hover {
+    color: aqua;
+}
+
+.data2 p {
+    transition: all 0.3s ease-in-out;
+}
+
+.data2 p:hover {
+    color: aqua;
+}
+
+@media (max-width: 767px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar .register {
+        text-align: center;
+    }
+
+    .courses_list {
+        grid-template-columns: 1fr;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list img {
+        margin-bottom: 10px;
+    }
+
+    .reviews {
+        grid-template-columns: 1fr;
+        /* Single column layout for reviews */
+    }
+
+    .footer {
+        flex-direction: column;
+        /* Stack footer items vertically */
+        align-items: center;
+        /* Center the footer items */
+    }
+
+    .main .courses .courses_menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .swiper {
+        display: none !important;
+    }
+
+    .main h1 {
+        font-size: 24px;
+        /* Smaller heading size */
+    }
+
+    .lastSotrr {
+        width: 100% !important;
+    }
+
+    .lastSotr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Styles for smaller phones */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .lastSotrr {
+        width: 100% !important;
+    }
+
+    .lastSotr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar .register {
+        text-align: center;
+    }
+
+    .courses_list {
+        grid-template-columns: 1fr;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list img {
+        margin-bottom: 10px;
+    }
+
+    .reviews {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main h1 {
+        font-size: 20px;
+    }
+}
+
+
+.mainComment {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 55px;
+    text-align: center;
+}
+
+.comment p {}
+
+.exits {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.exits:hover {
+    color: aqua;
+}
+
+
+.spisokSotr {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.spisokSotr p {
+    font-size: 24px;
+    color: #5e5c5c;
+}
+
+.lastSotr {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastSotrr {
+    width: 30%;
+}
+
+.lastSotrr>h3 {
+    font-size: 18px;
+    color: #5e5c5c;
+}
+
+.bold {
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.contact {
+    padding-bottom: 36px;
+}
+
+.contact>p {
+    padding-top: 20px;
+    font-size: 18px;
+    color: #5e5c5c;
+}
+
+.bns {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+.bns:hover {
+    color: blueviolet;
+}
+
+.webJob {
+    padding: 30px;
+}
+
+.webJobMain>p {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.webList>p {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 0px 0px 5px 20px;
+    font-size: 20px;
+    color: #5e5c5c;
+}
+
+.Polz>h2 {
+    padding: 15px;
+}
+
+.Polz>p {
+    padding: 10px 0 10px;
+    font-size: 18px;
+}
+
+.mainPolit>h2 {
+    padding: 15px;
+}
+
+.mainPolit>p {
+    padding: 10px 0 10px;
+    font-size: 18px;
+}
+
+#btn {
+    padding: 10px;
+    border: none;
+    background: none;
+    color: #5e5c5c;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn:hover {
+    color: blueviolet;
+    border-radius: 2%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
